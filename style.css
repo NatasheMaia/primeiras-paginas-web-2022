@@ -1,0 +1,165 @@
+*{
+    font-family: 'Sniglet', cursive;
+}
+
+.active{
+    height: 20px;
+}
+
+.active::after{
+    background: #6B8E23;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 15px;
+}
+
+.hide{
+    display: none !important;
+}
+
+/*header*/
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header{
+    background-color: #6B8E23;
+    padding: 10px 0 10px 10px;
+}
+
+#head{
+    display: flex;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.icon-header{
+    width: 100px;
+}
+
+.primary-title{
+    align-self: center;
+    color: #363636;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+/*navbar*/
+nav {
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.075);
+}
+
+#list-categories{
+    display: flex;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+#list-categories .categorie{
+    align-self: center;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+/*body*/
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14em;
+    max-width: 1024px;
+}
+
+body{
+    background-color: #FFF0F5;
+}
+
+/*card*/
+.card{
+    background-color: #FFF0F5;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(85,107,47) !important;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.5s all;
+    width: 26rem;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.image-card {
+    border-style: none;
+    border-top-left-radius: calc(0.50rem - 2px);
+    border-top-right-radius: calc(0.50rem - 2px);
+    display: block;
+    height: 280px;
+    width: 100%;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body .title-card{
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: #1C1C1C;
+}
+
+.card-body .type-plant{
+    color: #6c757d;
+}
+
+.card-body .heart-icon{
+    color: #6B8E23;
+    display: block;
+    font-size: 18px;
+    padding-top: 5px;
+    width: fit-content;
+}
+
+.heart-icon::before{
+    font-weight: bold !important;
+}
+.heart-icon:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .primary-title{
+        font-size: 28px;
+    }
+
+    .categorie{
+        margin-left: 20px !important;
+    }
+
+    .card{
+        width: 18rem;
+    }
+
+    .image-card{
+        height: 180px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
